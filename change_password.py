@@ -14,7 +14,7 @@ def on_closing():
     if messagebox.askokcancel("Quit", "Do you want to quit?"):
         root_window.destroy() 
 def change_pwd():
-    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
+    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="NISsan123@.", database="pulchowkcampus")
     mycursor = db.cursor()
     mycursor.execute("SELECT y FROM global_values WHERE x = 'admin'")
     rows = mycursor.fetchone()

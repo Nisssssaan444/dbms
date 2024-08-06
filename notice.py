@@ -12,7 +12,7 @@ def on_closing():
 def search():
     option = dropdown.get()
     search_input = searchInput.get()
-    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
+    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
     mycursor = db.cursor()
     if search_input == "":
         mycursor.execute("SELECT * FROM notice_board")

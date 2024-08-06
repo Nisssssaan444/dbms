@@ -61,7 +61,7 @@ def draw_login_page():
 def login():
     username = window.winfo_children()[2].get(1.0, "end-1c")
     password = window.winfo_children()[4].get()
-    db = mysql.connector.connect(host="localhost",port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
+    db = mysql.connector.connect(host="localhost",port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
     mycursor = db.cursor()
     mycursor.execute("SELECT y FROM global_values WHERE x = 'admin'")
     rows = mycursor.fetchone()

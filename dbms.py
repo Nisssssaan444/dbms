@@ -19,7 +19,7 @@ def execute_query():
         host="localhost",
         port=3306,
         user="root",  # change this to your MySQL username
-        password="Sanim#$100.",  # change this to your MySQL password
+        password="NISsan123@",  # change this to your MySQL password
         database="pulchowkcampus"
     )
     mycursor = db.cursor(buffered=True)

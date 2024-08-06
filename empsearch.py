@@ -27,7 +27,7 @@ def on_back():
 def search():
     option = dropdown.get()
     search_input = searchInput.get()
-    db = mysql.connector.connect(host="localhost",port=3306,user="root", password="Sanim#$100.", database="pulchowkcampus")
+    db = mysql.connector.connect(host="localhost",port=3306,user="root", password="NISsan123@", database="pulchowkcampus")
     mycursor = db.cursor(buffered=True)
     if option == "Name":
         mycursor.execute("SELECT * FROM employee_table WHERE name = %s", (search_input,))
