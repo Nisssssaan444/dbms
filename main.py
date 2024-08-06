@@ -61,7 +61,7 @@ def draw_login_page():
 def login():
     username = window.winfo_children()[2].get(1.0, "end-1c")
     password = window.winfo_children()[4].get()
-    db = mysql.connector.connect(host="localhost",port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
+    db = mysql.connector.connect(host="localhost",port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
     mycursor = db.cursor()
     mycursor.execute("SELECT y FROM global_values WHERE x = 'admin'")
     rows = mycursor.fetchone()
@@ -101,32 +101,32 @@ def button_mode():
       
 def draw_search_employee():
     # import search_employee
-    os.system('python empsearch.py')
+    os.system('python3 empsearch.py')
 
 def draw_search_student():
     # import search_student
-    os.system('python stdsearch.py')
+    os.system('python3 stdsearch.py')
 
 def draw_visitor_fees():
-    os.system('python fees.py')
+    os.system('python3 fees.py')
 
 def draw_notice_board():
-    os.system('python notice.py')
+    os.system('python3 notice.py')
 
 def draw_edit_student():
-    os.system('python stdedit.py')
+    os.system('python3 stdedit.py')
 
 def draw_edit_employee():
-    os.system('python empedit.py')
+    os.system('python3 empedit.py')
 
 def draw_edit_notice_board():
-    os.system('python editnotice.py')
+    os.system('python3 editnotice.py')
 
 def draw_change_password():
-    os.system('python change_password.py')
+    os.system('python3 change_password.py')
 
 def draw_execute_dbms():
-    os.system('dbms.py')
+    os.system('python3 dbms.py')
 
 def draw_visitor():
     for widget in dashboard.winfo_children():
@@ -137,13 +137,13 @@ def draw_visitor():
     label1 = Label(dashboard,image=test)
     label1.photo = test
     label1.place(x=0, y=0, height = 400, width = 1080)
-    option= Button(dashboard, text ="Search Employee", command = draw_search_employee, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#eae2b7")
+    option= Button(dashboard, text ="Search Employee", command = draw_search_employee, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#000000")
     option.place(x=150, y=75, width = 200, height = 50)
-    option= Button(dashboard, text ="Search Student", command =  draw_search_student, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#eae2b7")
+    option= Button(dashboard, text ="Search Student", command =  draw_search_student, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#000000")
     option.place(x=730, y=75, width = 200, height = 50)
-    option= Button(dashboard, text ="Fee Structure", command = draw_visitor_fees, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#eae2b7")
+    option= Button(dashboard, text ="Fee Structure", command = draw_visitor_fees, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#000000")
     option.place(x=150, y=275, width = 200, height = 50)
-    option= Button(dashboard, text ="Notice Board", command = draw_notice_board, bd=0, font=("Helvetica",16), bg = "#118ab2", fg="#eae2b7")
+    option= Button(dashboard, text ="Notice Board", command = draw_notice_board, bd=0, font=("Helvetica",16), bg = "#118ab2", fg="#000000")
     option.place(x=730, y=275, width = 200, height = 50)
 
 
@@ -156,15 +156,15 @@ def draw_admin():
     label1 = Label(dashboard,image=test)
     label1.photo = test
     label1.place(x=0, y=0, height = 400, width = 1080)
-    option= Button(dashboard, text ="View/Edit Employee", command = draw_edit_employee, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#eae2b7")
+    option= Button(dashboard, text ="View/Edit Employee", command = draw_edit_employee, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#000000")
     option.place(x=100, y=75, width = 250, height = 50)
-    option= Button(dashboard, text ="View/Edit Student", command =  draw_edit_student, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#eae2b7")
+    option= Button(dashboard, text ="View/Edit Student", command =  draw_edit_student, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#000000")
     option.place(x=735, y=75, width = 250, height = 50)
-    option= Button(dashboard, text ="Change Password", command = draw_change_password, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#eae2b7")
+    option= Button(dashboard, text ="Change Password", command = draw_change_password, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#000000")
     option.place(x=100, y=275, width = 250, height = 50)
-    option= Button(dashboard, text ="View/Edit Notice Board", command = draw_edit_notice_board, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#eae2b7")
+    option= Button(dashboard, text ="View/Edit Notice Board", command = draw_edit_notice_board, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#000000")
     option.place(x=420, y=150, width = 250, height = 50)
-    option= Button(dashboard, text ="Execute DBMS Query", command = draw_execute_dbms, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#eae2b7")
+    option= Button(dashboard, text ="Execute DBMS Query", command = draw_execute_dbms, bd =0, font=("Helvetica",16), bg = "#118ab2",fg="#000000")
     option.place(x=735, y=275, width = 250, height = 50)
 
 # Header

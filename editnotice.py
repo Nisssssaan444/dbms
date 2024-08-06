@@ -15,7 +15,7 @@ def on_closing():
 def search():
     option = dropdown.get()
     search_input = searchInput.get()
-    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
+    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
     mycursor = db.cursor()
     if search_input == "":
         mycursor.execute("SELECT * FROM notice_board")
@@ -43,7 +43,7 @@ def show():
     id = IdEntry.get()
     nam = TopicEntry.get()
     desig = DescriptionEntry.get()
-    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
+    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
     mycursor = db.cursor()
     mycursor.execute("select * from notice_board")
     rows = mycursor.fetchall()
@@ -83,7 +83,7 @@ def add():
             host="localhost",
             port=3306,
             user="root",
-            password="NISsan123@",
+            password="Sanim#$100.",
             database="pulchowkcampus"
         )
         mycursor = db.cursor()
@@ -111,7 +111,7 @@ def update():
         host="localhost",
         port=3306,
         user="root",
-        password="NISsan123@",
+        password="Sanim#$100.",
         database="pulchowkcampus"
     )
     mycursor = db.cursor()
@@ -135,7 +135,7 @@ def update():
 
 def delete1():
     iD = IdEntry.get()
-    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
+    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
     mycursor = db.cursor()
     sql = "DELETE FROM notice_board WHERE id='"+str(iD)+"'"
     mycursor.execute(sql)
@@ -164,7 +164,7 @@ def random_string():
     S = 5
     while(count!=0):
         ran = ''.join(random.choices(string.ascii_letters + string.digits, k = S))
-        db = mysql.connector.connect(host="localhost", port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
+        db = mysql.connector.connect(host="localhost", port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
         mycursor = db.cursor()
         mycursor.execute("select count(id) from notice_board where id = '"+str(ran)+"'")
         rows = mycursor.fetchone()

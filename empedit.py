@@ -18,7 +18,7 @@ def on_closing():
 def search():
     option = dropdown.get()
     search_input = searchInput.get()
-    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
+    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
     mycursor = db.cursor()
     if search_input == "":
         mycursor.execute("SELECT * FROM employee_table")
@@ -44,7 +44,7 @@ def search():
     db.close()
 
 def show():
-    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
+    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
     mycursor = db.cursor()
     mycursor.execute("SELECT * FROM employee_table")
     rows = mycursor.fetchall()
@@ -81,7 +81,7 @@ def add():
         name = NameEntry.get()
         desg = DesignationEntry.get()
         dept = DepartmentEntry.get()
-        db = mysql.connector.connect(host="localhost", port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
+        db = mysql.connector.connect(host="localhost", port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
         mycursor = db.cursor()
         try:
            mycursor.execute("INSERT INTO employee_table (id, name, designation, dept) VALUES ('" + str(iD) + "', '" + str(name).upper() + "', '" + str(desg).upper() + "', '" + str(dept).upper() + "')")
@@ -99,7 +99,7 @@ def update():
     name = NameEntry.get()
     desg = DesignationEntry.get()
     dept = DepartmentEntry.get()
-    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
+    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
     mycursor = db.cursor()
     mycursor.execute("UPDATE employee_table SET name = '" + str(name).upper() + "', designation = '" + str(desg) + "', dept = '" + str(dept).upper() + "' WHERE id = '" + str(iD) + "'")
     db.commit()
@@ -113,7 +113,7 @@ def update():
 
 def delete1():
     iD = IdEntry.get()
-    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
+    db = mysql.connector.connect(host="localhost", port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
     mycursor = db.cursor()
     sql = "DELETE FROM employee_table WHERE id='" + str(iD) + "'"
     mycursor.execute(sql)
@@ -143,7 +143,7 @@ def random_string():
     S = 5
     while(count != 0):
         ran = ''.join(random.choices(string.ascii_letters + string.digits, k = S))
-        db = mysql.connector.connect(host="localhost", port=3306, user="root", password="NISsan123@", database="pulchowkcampus")
+        db = mysql.connector.connect(host="localhost", port=3306, user="root", password="Sanim#$100.", database="pulchowkcampus")
         mycursor = db.cursor()
         mycursor.execute("SELECT COUNT(id) FROM employee_table WHERE id = '" + str(ran) + "'")
         rows = mycursor.fetchone()
